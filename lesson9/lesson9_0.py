@@ -1,6 +1,6 @@
 #內建的變數
 import pyinputplus as pypi
-import tools
+import health
 
 
 
@@ -12,8 +12,8 @@ def main()->None:
     weight = pypi.inputInt("請輸入您的體重(kg): ", min=0, max=200)
     print(weight)
 
-    BMI = tools.cal_bmi(height=height, weight=weight)
-    rate = tools.get_status(BMI)
+    BMI = health.cal_bmi(height=height, weight=weight)
+    rate = health.get_status(BMI)
     print(f"您的姓名為 {name}\n您的BMI值為 {BMI}\n您屬於 {rate} 範圍")
 
 
