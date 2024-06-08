@@ -11,11 +11,17 @@ class Bmi:
         self.__hight = h
         self.__weight =g
 
+
     @property
     def name(self)-> int:
         return self.__name
 
-def weight(self) -> int:
+    @property
+    def hight(self)-> int:
+        return self.__hight
+    
+    @property
+    def weight(self) -> int:
         return self.__weight
     
     
