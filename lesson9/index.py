@@ -22,4 +22,19 @@ if __name__ == '__main__':
     print(type(__name__))
     '''
     main()
+
+import pyinputplus as pypi
+from health import BMI
+
+def main()->None:
+    name = pypi.inputStr("請輸入您的姓名: ")
+    print(name)
+    height = pypi.inputInt("請輸入您的身高(cm): ", min=50, max=250)
+    print(height)
+    weight = pypi.inputInt("請輸入您的體重(kg): ", min=0, max=200)
+    print(weight)
+
+    BMI = tools.cal_bmi(height=height, weight=weight)
+    rate = tools.get_status(BMI)
+    print(f"您的姓名為 {name}\n您的BMI值為 {BMI}\n您屬於 {rate} 範圍")
     
