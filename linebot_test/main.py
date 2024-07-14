@@ -35,3 +35,4 @@ def handle_message(event):
     response = model.generate_content(event.message.text)
     message = TextSendMessage(text=response.text)
     line_bot_api.reply_message(event.reply_token,message)
+    
