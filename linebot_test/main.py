@@ -16,3 +16,4 @@ def pwd():
     <h2>{os.environ['CHANNEL_SECRT']}</h2>
     <h2>{os.environ['Gemini_API_KEY']}</h2>
     '''
+
