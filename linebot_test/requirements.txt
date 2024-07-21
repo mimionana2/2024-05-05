@@ -1,6 +1,1 @@
 Flask
-python-dotenv
-gunicorn
-google-generativeai
-line-bot-sdk
-requests
